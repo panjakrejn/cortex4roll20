@@ -1,0 +1,265 @@
+.item1 {
+  grid-area: header;
+}
+
+.item2 {
+  grid-area: attribute;
+}
+
+.item3 {
+  grid-area: drive;
+}
+
+.item4 {
+  grid-area: distinction;
+}
+
+.item5 {
+  grid-area: other;
+}
+
+.item6 {
+  grid-area: powerspec;
+}
+
+.item7 {
+  grid-area: power2;
+}
+
+.item8 {
+  grid-area: footer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template:
+    'header header header' 90px
+    'attribute drive distinction' 200px
+    'attribute drive other' 50px
+    'powerspec power2 other' 250px
+    'footer footer footer' 160px;
+  grid-template-columns: 1fr 1fr 1.5fr;
+  grid-gap: 5px;
+  background-color: #0e5c9c;
+  padding: 5px;
+}
+
+.grid-container>div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  vertical-align: middle;
+  padding: 0px 0;
+  font-size: 1em;
+}
+
+select {
+  width: 4.5em;
+  text-align: right;
+  vertical-align: middle;
+}
+
+div.attributesshed {
+  text-align: center;
+  margin-top: .5em;
+  margin-bottom: -.5em;
+  font-variant-caps: small-caps;
+  text-decoration: underline;
+  text-underline-offset: .2em;
+  padding-bottom: 0em;
+}
+
+div.drivesshed {
+  text-align: center;
+  margin-top: .5em;
+  margin-bottom: 2em;
+  font-variant-caps: small-caps;
+  text-decoration: underline;
+  text-underline-offset: .2em;
+  padding-bottom: 0em;
+}
+
+div.line {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -.2em;
+  /* Adjust spacing between lines */
+}
+
+div.attributes,
+div.drives {
+  text-align: center;
+  vertical-align: middle;
+  grid-template-columns: 2em 5em 2em;
+  column-gap: 0em;
+  row-gap: 0em;
+}
+
+.attributes select,
+.drives select {
+  width: 4.5em;
+  /* Fixed width for select elements */
+  margin-left: 1.5em;
+  /* Adjust space before select */
+  margin-right: 1em;
+  /* Adjust space before label */
+  font-weight: 900;
+  /*font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
+}
+
+div.attributes label,
+div.drives label {
+  text-align: center;
+  flex: 1;
+  /* Allow label to expand to fill remaining space /*
+        margin-left: 1em;
+    /* Adjust space before select */
+  margin-left: 0em;
+  margin-right: 0em;
+  margin-top: .3em;
+}
+
+div.distinctionsshed {
+  text-align: center;
+  margin-top: .5em;
+  margin-bottom: 2em;
+  font-variant-caps: small-caps;
+  text-decoration: underline;
+  text-underline-offset: .2em;
+  padding-bottom: 0em;
+}
+
+div.attributes input[type="checkbox"],
+div.drives input[type="checkbox"] {
+  margin-left: 0em;
+  margin-right: 2em;
+  /* Adjust as needed */
+  margin-bottom: .7em;
+}
+
+div.writeline {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -.2em;
+  /* Adjust spacing between lines */
+}
+
+div.distinctions {
+  text-align: center;
+  vertical-align: middle;
+  grid-template-columns: 2em 5em 2em;
+  column-gap: 0em;
+  row-gap: 0em;
+}
+
+.distinctions select {
+  width: 4.5em;
+  /* Fixed width for select elements */
+  margin-left: 1.5em;
+  /* Adjust space before select */
+  margin-right: 1em;
+  /* Adjust space before label */
+  font-weight: 900;
+  /*font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
+}
+
+div.distinctions input[type="text"] {
+  text-align: center;
+  flex: 1;
+  /* Allow label to expand to fill remaining space /*
+        margin-left: 1em;
+    /* Adjust space before select */
+  margin-left: 0em;
+  margin-right: 1em;
+  margin-top: 0em;
+  margin-bottom: 1em;
+}
+
+div.distinctions input[type="checkbox"] {
+  margin-left: 0em;
+  margin-right: 2em;
+  /* Adjust as needed */
+  margin-bottom: .7em;
+}
+
+div.powspecshed {
+  text-align: center;
+  margin-top: .5em;
+  margin-bottom: .7em;
+  font-variant-caps: small-caps;
+  text-decoration: underline;
+  text-underline-offset: .3em;
+  padding-bottom: 0em;
+}
+.powspec select {
+  width: 4.5em;
+  /* Fixed width for select elements */
+  margin-left: 0em;
+  /* Adjust space before select */
+  margin-right: 0em;
+  /* Adjust space before label */
+  font-weight: 900;
+  /*font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
+}
+
+div.powspec input[type="text"] {
+  text-align: center;
+  width: 10em;
+  /* Allow label to expand to fill remaining space /*
+        margin-left: 1em;
+    /* Adjust space before select */
+  margin-left: .6em;
+  margin-right: .6em;
+  margin-top: 0em;
+  margin-bottom: .7em;
+}
+
+div.powspec input[type="checkbox"] {
+  margin-left: 0em;
+  margin-right: 0em;
+  /* Adjust as needed */
+  margin-bottom: 0em;
+  margin-top: -0.7em;
+}
+div.powtwoshed {
+  text-align: center;
+  margin-top: .5em;
+  margin-bottom: .7em;
+  font-variant-caps: small-caps;
+  text-decoration: underline;
+  text-underline-offset: .3em;
+  padding-bottom: 0em;
+}
+.powtwo select {
+  width: 4.5em;
+  /* Fixed width for select elements */
+  margin-left: .5em;
+  /* Adjust space before select */
+  margin-right: 0em;
+  /* Adjust space before label */
+  font-weight: 900;
+  /*font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
+}
+
+div.powtwo input[type="text"] {
+  text-align: center;
+  width: 10em;
+  /* Allow label to expand to fill remaining space /*
+        margin-left: 1em;
+    /* Adjust space before select */
+  margin-left: .6em;
+  margin-right: .6em;
+  margin-top: 0em;
+  margin-bottom: .7em;
+}
+
+div.powtwo input[type="checkbox"] {
+  margin-left: 0em;
+  margin-right: .5em;
+  /* Adjust as needed */
+  margin-bottom: 0em;
+  margin-top: -0.7em;
+}
+
+div.head {
+  
+}
